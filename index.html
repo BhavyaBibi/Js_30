@@ -6,23 +6,22 @@
         </title>
     </head>
     <body>
-        <h1 onclick='javascript:alert(1);'' style="color:rebeccapurple;">WELCOME TO JAVASCRIPT</h1>
+        <h1 onclick='javascript:alert(1);'' style="color:rebeccapurple;">Switch</h1>
     </body>
     <script >
      var  fruit = 'grape';
-     if (fruit=="apple"){
-         console.log("it is apple")
-     }
-     else if(fruit =="orange") 
-     {
-         console.log("it is orange")
-     }
-     else if (fruit== "banana"){
-        console.log("it is banana")
-     }
+     switch (fruit){
+         case "apple": console.log("it is apple")
+         break;
+     
+         case "orange": console.log("it is orange")
+         break;
+
+        case  "banana":console.log("it is banana")
+        break;
+    
   
-        else{
-            console.log("some other fruit")
-        }
+       default: console.log("some other fruit")
+    }
     </script>
 </html> 
