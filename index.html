@@ -9,15 +9,12 @@
         <h1 onclick='javascript:alert(1);'' style="color:rebeccapurple;"> Nested For Looping</h1>
     
       <script >
-         
+         ar = [10,20,30,40,50,60,70,80,90]
        
-        for(var i=0; i<10; i++){
-            for(j=0; j<10; j++)
-            {
-               document.write(i+ " "+  j + "<br>" );
-            }
-           
-        }
+       for (i in ar)
+       {
+           console.log(ar[i]);
+       }
         
         </script>
     </body>
