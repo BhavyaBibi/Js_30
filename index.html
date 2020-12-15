@@ -6,13 +6,17 @@
         </title>
     </head>
     <body>
-        <h1 onclick='javascript:alert(1);'' style="color:rebeccapurple;"> For Looping</h1>
+        <h1 onclick='javascript:alert(1);'' style="color:rebeccapurple;"> Nested For Looping</h1>
     
       <script >
-          var ar =("javascript","html","css","python","node")
+         
        
-        for(var i=1; i<ar.lenth; i++ ){
-            console.log(ar[i]);
+        for(var i=0; i<10; i++){
+            for(j=0; j<10; j++)
+            {
+               document.write(i+ " "+  j + "<br>" );
+            }
+           
         }
         
         </script>
