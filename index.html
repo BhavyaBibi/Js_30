@@ -6,21 +6,18 @@
         </title>
     </head>
     <body>
-        <h1 onclick='javascript:alert(1);'' style="color:rebeccapurple;"> Function Arguments </h1>
+        <h1 onclick='javascript:alert(1);'' style="color:rebeccapurple;"> Example of Global Variable </h1>
     
 <script >
+var a=10;
 function abc()
 {
-    xyz();
-    console.log("this is abc")
+    a=20;
 
 }
-function xyz()
-{
-    console.log("this is xyz")
-}
+console.log(a);
 abc();
-
+console.log(a);
 
 
 
