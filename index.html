@@ -6,13 +6,20 @@
         </title>
     </head>
     <body>
-        <h1 onclick='javascript:alert(1);'' style="color:rebeccapurple;"> sum of two numbers</h1>
+        <h1 onclick='javascript:alert(1);'' style="color:rebeccapurple;"> Function Arguments </h1>
     
       <script >
-      function sum( a, b){
+      var sum=function(a,b){
           return a+b;
-      }
-       console.log (sum(20, 30));
-        </script>
+      
+      
+        }
+        function abc(x)
+        {
+            console.log(x(10,20))
+
+        }
+        abc (sum)
+</script>
     </body>
 </html> 
