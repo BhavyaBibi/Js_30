@@ -7,7 +7,7 @@
     </head>
     <body>
         <h1  style="color:rebeccapurple;"> Events</h1>
-        <input id ="txt" type="text" >
+        <input onkeypress=" keypressed(this);" id ="txt" type="text" >
         <button onclick="buttonclick(txt);" id="btn">click </button>
 
     
@@ -18,6 +18,10 @@
 function buttonclick(a)
 {
     alert("you clicked this button" +a.value)
+}
+function keypressed(x)
+{
+    console.log(x.value);
 }
 
 </script>
