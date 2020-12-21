@@ -8,16 +8,16 @@
     <body>
         <h1  style="color:rebeccapurple;"> Events</h1>
         <input id ="txt" type="text" >
-        <button onclick="buttonclick();" id="btn">click </button>
+        <button onclick="buttonclick(txt);" id="btn">click </button>
 
     
 <script >
 
 
 
-function buttonclick()
+function buttonclick(a)
 {
-    alert("you clicked this button")
+    alert("you clicked this button" +a.value)
 }
 
 </script>
