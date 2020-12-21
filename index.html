@@ -7,24 +7,25 @@
     </head>
     <body>
         <h1  style="color:rebeccapurple;"> Events</h1>
-        <input onkeypress=" keypressed(this);" id ="txt" type="text" >
-        <button onclick="buttonclick(txt);" id="btn">click </button>
+
+
+        
+        
+        <button ondblclick="buttonclick();" id="btn">click </button>
+        <span id="counter"> 0</span>
 
     
-<script >
+       <script >
 
+          var count=0;
 
+       function buttonclick(a)
+    {
+    count++;
+       document.getElementById("counter").innerHTML = count;
+    }
 
-function buttonclick(a)
-{
-    alert("you clicked this button" +a.value)
-}
-function keypressed(x)
-{
-    console.log(x.value);
-}
-
-</script>
+    </script>
 
     </body>
 </html> 
