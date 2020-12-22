@@ -12,10 +12,9 @@
 <span id="counter">0</span>
 <script>
     var count=0;
-    document.getElementById("btn").addEventListener("click" , function (){
-        count++;
-       document.getElementById("counter").innerHTML=count;
-
+    document.addEventListener("mousemove" , function (event){
+        console.log(event.clientX +"," +event.clientY)
+       
     });
   
     </script>
