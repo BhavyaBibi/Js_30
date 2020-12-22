@@ -11,16 +11,13 @@
 <button id="btn"> click</button>
 <span id="counter">0</span>
 <script>
-    
+    var count=0;
     document.getElementById("btn").addEventListener("click" , function (){
-        alert('call 1')
+        count++;
+       document.getElementById("counter").innerHTML=count;
 
     });
-     
-    document.getElementById("btn").addEventListener("click" , function (){
-        alert('call 2')
-
-    });
+  
     </script>
 
 
