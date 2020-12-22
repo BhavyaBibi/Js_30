@@ -6,26 +6,18 @@
         </title>
     </head>
     <body>
-        <h1  style="color:rebeccapurple;"> Events</h1>
-
-
-        
-        
-        <button ondblclick="buttonclick();" id="btn">click </button>
-        <span id="counter"> 0</span>
-
+       
+<h1> Events</h1>
+<button id="btn"> click</button>
+<span id="counter">0</span>
+<script>
     
-       <script >
+    document.getElementById("btn").addEventListener("click" , function (){
+        alert('call')
 
-          var count=0;
-
-       function buttonclick(a)
-    {
-    count++;
-       document.getElementById("counter").innerHTML = count;
-    }
-
+    });
     </script>
+
 
     </body>
 </html> 
