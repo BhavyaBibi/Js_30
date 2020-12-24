@@ -9,8 +9,12 @@
        
         <h1> Timer in javasript</h1>
         <script>
-           setInterval (function(){
+            var i=0;
+          var x = setInterval (function(){
                document.write("*")
+               i++;
+               if(>10)
+               clearInterval(x)
            },100)
         </script>
    
