@@ -9,6 +9,7 @@
        
         <h1> Timer in javasript</h1>
         <span id='count'></span>
+        <span id='count1'></span>
 
         <script>
             var i=10;
@@ -19,7 +20,16 @@
             
                i--;
 
-             },100)
+             },1000)
+             var j=100;
+             var y = setInterval (function(){
+               if(i==0)
+               clearInterval(y)
+               document.getElementById('count1').innerHTML= j;
+               
+                  j--;
+   
+                },1000)
         </script>
    
 
