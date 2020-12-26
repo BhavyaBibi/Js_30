@@ -12,24 +12,19 @@
         <span id='count1'></span>
 
         <script>
-            var i=10;
-          var x = setInterval (function(){
-            if(i==0)
-            clearInterval(x)
-            document.getElementById('count').innerHTML= i;
-            
-               i--;
-
-             },1000)
-             var j=100;
-             var y = setInterval (function(){
-               if(i==0)
-               clearInterval(y)
-               document.getElementById('count1').innerHTML= j;
+            function abc(){
+             var i=0;
+             setTimeout(function(){
+                 i++;
+               document.write('*');
+               if(i<20)
+               abc();
                
-                  j--;
+                 
    
-                },1000)
+                },1000);
+            }
+                abc();
         </script>
    
 
