@@ -8,16 +8,20 @@
     <body>
        
         <h1> Timer in javasript</h1>
+        <span id='count'></span>
+
         <script>
-            var i=0;
+            var i=10;
           var x = setInterval (function(){
-               document.write("*")
-               i++;
-               if(i>10)
-               clearInterval(x)
-           },100)
+            if(i==0)
+            clearInterval(x)
+            document.getElementById('count').innerHTML= i;
+            
+               i--;
+
+             },100)
         </script>
    
 
     </body>
-</html> 
+   </html>
