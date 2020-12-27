@@ -6,27 +6,29 @@
         </title>
     </head>
     <body>
-       
-        <h1> Timer in javasript</h1>
-        <span id='count'></span>
-        <span id='count1'></span>
-
+        <h1> Date and Time </h1>
+        <h3 id="currentTime"></h3>
         <script>
-            function abc(){
-             var i=0;
-             setTimeout(function(){
-                 i++;
-               document.write('*');
-               if(i<20)
-               abc();
-               
-                 
-   
-                },1000);
+            var timeElement = document.getElementById("currentTime");
+            
+            function putZero(nm){
+                return nm<10? "0"+ nm:nm;
             }
-                abc();
-        </script>
-   
+            function showTime(){
+                var dt = new Date();
+                var hours = dt.getHours();
+                var amorpm = hours>12?"pm":"am";
+                var dateString = putZero( hours%12 ) + ":" + putZero(dt.getMinutes() ) + ":"+ putZero(dt.getSeconds()) + " " + amorpm
+                timeElement.innerHTML = dateString;
+                setTimeout(function(){
+                    showTime();
+                },1000);
+            } 
+            showTime();
 
+
+        </script>
+       
+       
     </body>
-   </html>
+</html>
