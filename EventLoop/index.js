@@ -7,12 +7,12 @@ let y = 20;
 console.log("console 2")
 setTimeout(() => {
     console.log("set timeout 1")
-}0);
-console.log("onsole 3")
+}, 0);
+console.log("console 3")
 
 setTimeout(() => {
     console.log("set timeout 2")
-}0);
+}, 0);
 
 
 new Promise((resolve, reject) => {
