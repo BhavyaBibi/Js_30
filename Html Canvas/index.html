@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <canvas width=300 height=400 id="canvas" style="border:solid 1px black">
+    <canvas width=400 height=400 id="canvas" style="border:solid 1px black">
 
     </canvas>
     <script>
@@ -18,6 +18,10 @@
         var x = 10;
         var y = 10;
         function animate() {
+            cfx.fillStyle = "white";
+            cfx.fillRect(0, 0, 400, 400);
+            cfx.fillStyle = "black";
+
 
             x += 10;
             y += 10;
