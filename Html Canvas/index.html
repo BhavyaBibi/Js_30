@@ -15,20 +15,12 @@
     <script>
         const canvas = document.getElementById("canvas");
         const cfx = canvas.getContext("2d");
-        cfx.strokeStyle = "red";
-        cfx.beginPath();
-        cfx.moveTo(10, 10);
-        cfx.lineTo(140, 10);
-        cfx.stroke();
-        var lineCap = ['butt', 'round', 'square'];
-        for (var i = 0; i < lineCap.length; ++i) {
-            cfx.lineWidth = 15;
-            cfx.lineCap = lineCap[i];
-            cfx.beginPath();
-            cfx.moveTo(25 + i * 50, 10)
-            cfx.lineTo(25 + i * 50, 140);
-            cfx.stroke();
+
+        var img = new Image();
+        img.onload = function () {
+            cfx.drawImage(img, 0, 0, 100, 80)
         }
+        img.src = "mario.jpg";
 
     </script>
 
