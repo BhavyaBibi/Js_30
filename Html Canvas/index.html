@@ -15,19 +15,10 @@
     <script>
         const canvas = document.getElementById("canvas");
         const cfx = canvas.getContext("2d");
-        cfx.strokeStyle = "red";
-        cfx.strokeRect(10, 10, 150, 100);
-        cfx.fillStyle = "green";
-        cfx.fillRect(100, 280, 120, 100);
+
         cfx.beginPath();
-        cfx.moveTo(200, 250);
-        cfx.lineTo(20, 250);
-        cfx.lineTo(20, 250);
-        cfx.lineTo(180, 100);
-        cfx.fillStyle = "yellow";
-
+        cfx.arc(100, 100, 40, 0, Math.PI * 2);
         cfx.fill();
-
     </script>
 </body>
 
