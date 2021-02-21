@@ -18,9 +18,14 @@
 
         var img = new Image();
         img.onload = function () {
-            cfx.drawImage(img, 0, 0, 100, 80)
+            cfx.drawImage(img, 0, 0);
+            cfx.moveTo(40, 96);
+            cfx.lineTo(70, 66);
+            cfx.lineTo(103, 76);
+            cfx.lineTo(170, 15);
+            cfx.stroke();
         }
-        img.src = "mario.jpg";
+        img.src = "backdrop.jpg";
 
     </script>
 
