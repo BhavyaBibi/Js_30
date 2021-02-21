@@ -16,17 +16,12 @@
         const canvas = document.getElementById("canvas");
         const cfx = canvas.getContext("2d");
 
-        var img = new Image();
-        img.onload = function () {
-            cfx.drawImage(img, 0, 0);
-            cfx.moveTo(40, 96);
-            cfx.lineTo(70, 66);
-            cfx.lineTo(103, 76);
-            cfx.lineTo(170, 15);
-            cfx.stroke();
-        }
-        img.src = "backdrop.jpg";
-
+        cfx.font = '25px serif';
+        cfx.fillstyle = 'green';
+        cfx.fillText('welcome', 50, 50);
+        cfx.font = '45px serif';
+        cfx.strokeStyle = "red";
+        cfx.strokeText('Hello', 100, 100)
     </script>
 
 </body>
