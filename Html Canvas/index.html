@@ -15,22 +15,12 @@
     <script>
         const canvas = document.getElementById("canvas");
         const cfx = canvas.getContext("2d");
-        var x = 10;
-        var y = 10;
-        function animate() {
-            cfx.fillStyle = "white";
-            cfx.fillRect(0, 0, 400, 400);
-            cfx.fillStyle = "black";
-
-
-            x += 10;
-            y += 10;
-            cfx.beginPath();
-            cfx.arc(x, y, 40, 0, Math.PI * 2);
-            cfx.fill();
-            setTimeout(animate, 1000);
+        for (var i = 0; i < 6; ++i) {
+            for (var j = 0; j < 6; ++j) {
+                cfx.fillStyle = 'rgb(' + Math.floor(255 - 32.5 * i) + ',' + Math.floor(255 - 32.5 * j) + ',0)';
+                cfx.fillRect(j * 25, i * 25, 25, 25);
+            }
         }
-        animate();
     </script>
 
 </body>
