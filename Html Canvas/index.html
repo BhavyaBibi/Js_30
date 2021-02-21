@@ -12,7 +12,10 @@
     <canvas width=300 height=200 id="canvas" style="border:solid 1px black">
 
     </canvas>
-    <script src=" script.js">
+    <script>
+        const canvas = document.getElementById("canvas");
+        const cfx = canvas.getContext("2d")
+        cfx.fillRect(10, 10, 150, 100);
     </script>
 </body>
 
