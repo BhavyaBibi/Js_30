@@ -9,15 +9,16 @@
 </head>
 
 <body>
-    <canvas width=300 height=200 id="canvas" style="border:solid 1px black">
+    <canvas width=300 height=400 id="canvas" style="border:solid 1px black">
 
     </canvas>
     <script>
         const canvas = document.getElementById("canvas");
         const cfx = canvas.getContext("2d");
-        cfx.fillStyle = "red";
+        cfx.strokeStyle = "red";
         cfx.strokeRect(10, 10, 150, 100);
-        cfx.fillRect(10, 10, 150, 100);
+        cfx.fillStyle = "green";
+        cfx.fillRect(120, 150, 150, 100);
     </script>
 </body>
 
