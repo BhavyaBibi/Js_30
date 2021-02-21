@@ -18,7 +18,16 @@
         cfx.strokeStyle = "red";
         cfx.strokeRect(10, 10, 150, 100);
         cfx.fillStyle = "green";
-        cfx.fillRect(120, 150, 150, 100);
+        cfx.fillRect(120, 200, 150, 100);
+        cfx.beginPath();
+        cfx.moveTo(150, 150);
+        cfx.lineTo(200, 200);
+        cfx.lineTo(250, 20);
+        cfx.lineTo(150, 150);
+        cfx.strokeStyle = "yellow";
+
+        cfx.stroke();
+
     </script>
 </body>
 
