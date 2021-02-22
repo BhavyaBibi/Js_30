@@ -20,3 +20,17 @@ function paintingEnd(e) {
     ctx.beginPath();
 }
 canvas.addListner("mousedown", paintingStart);
+canvas.addListner("mouseup", paintingEnd);
+function draw(e) {
+    if (painting == false)
+        return;
+
+
+    let x = e.clientX;
+    let y = e.clientY - canvas.offsetTop;
+    ctx.lineWidth = brushSize;
+    ctx.lineCap = "round";
+    ctx.lineTo(x, y);
+    ctx.strokeStyle = brushColor;
+    ctx.stroke();
+}
