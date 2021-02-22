@@ -10,3 +10,13 @@ document.getElementById("color").addEventListener("change", function () {
 document.getElementById("thicknes").addEventListener("change", function () {
     brushSize = this.value;
 })
+let painting = false;
+function paintingStart(e) {
+    painting = true;
+    draw(e);
+}
+function paintingEnd(e) {
+    painting = false;
+    ctx.beginPath();
+}
+canvas.addListner("mousedown", paintingStart);
