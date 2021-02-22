@@ -35,6 +35,6 @@ function draw(e) {
 
 }
 
-canvas.addEventListner("mousedown", paintingStart);
-canvas.addEventListner("mouseup", paintingEnd);
-canvas.addEventListner("mousemove", draw);
+canvas.addEventListener("mousedown", paintingStart);
+canvas.addEventListener("mouseup", paintingEnd);
+canvas.addEventListener("mousemove", draw);
