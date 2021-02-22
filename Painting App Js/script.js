@@ -19,8 +19,9 @@ function paintingEnd(e) {
     painting = false;
     ctx.beginPath();
 }
-canvas.addListner("mousedown", paintingStart);
-canvas.addListner("mouseup", paintingEnd);
+canvas.addEventListner("mousedown", paintingStart);
+canvas.addEventListner("mouseup", paintingEnd);
+canvas.addEventListner("mousemove", draw);
 function draw(e) {
     if (painting == false)
         return;
