@@ -3,7 +3,8 @@ const ctx = canvas.getContext("2d");
 ctx.fillStyle = "white";
 ctx.fillRect(0, 0, 500, 500);
 ctx.fillStyle = "black";
-let brushSize = "black";
+let brushColor = "black"
+let brushSize = 3;
 document.getElementById("color").addEventListener("change", function () {
     brushColor = this.value;
 })
@@ -19,9 +20,6 @@ function paintingEnd(e) {
     painting = false;
     ctx.beginPath();
 }
-canvas.addEventListner("mousedown", paintingStart);
-canvas.addEventListner("mouseup", paintingEnd);
-canvas.addEventListner("mousemove", draw);
 function draw(e) {
     if (painting == false)
         return;
@@ -34,4 +32,9 @@ function draw(e) {
     ctx.lineTo(x, y);
     ctx.strokeStyle = brushColor;
     ctx.stroke();
+
 }
+
+canvas.addEventListner("mousedown", paintingStart);
+canvas.addEventListner("mouseup", paintingEnd);
+canvas.addEventListner("mousemove", draw);
