@@ -7,10 +7,10 @@ let brushColor = "black"
 let brushSize = 3;
 document.getElementById("color").addEventListener("change", function () {
     brushColor = this.value;
-})
+});
 document.getElementById("thicknes").addEventListener("change", function () {
     brushSize = this.value;
-})
+});
 let painting = false;
 function paintingStart(e) {
     painting = true;
