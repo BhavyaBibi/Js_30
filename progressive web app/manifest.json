@@ -1,0 +1,19 @@
+{
+    "name": "My First PWA",
+    "short-name": "My APP",
+    "start-url": ".",
+    "bankground-color": "#009578",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "images/logo64.png",
+            "size": "64X64",
+            "type": "images/png"
+        },
+        {
+            "src": "images/logo64.png",
+            "size": "512X512",
+            "type": "images/png"
+        },
+    ]
+}
